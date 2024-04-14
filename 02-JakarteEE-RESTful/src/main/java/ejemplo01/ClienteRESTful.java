@@ -47,6 +47,22 @@ public class ClienteRESTful {
 		return clienteService.obternerClientes();
 	}
 	
+	
+	/**
+	 * curl -v http://localhost:8080/02_jakartaRESTful_ejemplo/api/clientes/consultar/nombre
+	 * @param nombre
+	 * @return
+	 */
+	//Cabe destacar que estuve obligado a cambiar el @Path pues ya había otra función que recibia algo en la URL
+	@GET
+	@Path("/consultar/{nombre}")
+	@Produces({MediaType.APPLICATION_JSON})
+	public String checkCliente(@PathParam("nombre") String nombre) {
+		System.out.println("Checkeando la existencia del cliente: " + nombre);
+		return clienteService.checkCliente(nombre);
+	}
+	
+	
 
 	
 	/**

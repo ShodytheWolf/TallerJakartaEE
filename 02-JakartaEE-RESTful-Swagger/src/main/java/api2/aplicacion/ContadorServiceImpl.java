@@ -4,9 +4,10 @@ import java.io.Serializable;
 
 import api2.dominio.Contador;
 import jakarta.annotation.PostConstruct;
+import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.enterprise.context.SessionScoped;
 
-//ApplicationScoped
+//@ApplicationScoped
 //@RequestScoped
 @SessionScoped
 public class ContadorServiceImpl implements ContadorService, Serializable {

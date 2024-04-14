@@ -50,7 +50,24 @@ public class ClienteServiceImpl implements ClienteService {
 	@Override
 	public void insertar(Cliente cli) {
 		clientes.add(cli);
+	}
+	
+	@Override
+	public String checkCliente(String nombre) {
 		
+		String response = null;
+		
+		for(Cliente cli : clientes) {
+			
+			if(cli.getNombre().matches(nombre)) {
+				response = "El cliente " + nombre + " existe con ID:" + cli.getId();
+				//System.out.println("El cliente " + nombre + " existe con ID:" + cli.getId());
+				return response;
+			}
+		}
+		response = "El cliente " + nombre + " no existe";
+		//System.out.println("El cliente " + nombre + " no existe");
+		return response;
 	}
 
 	

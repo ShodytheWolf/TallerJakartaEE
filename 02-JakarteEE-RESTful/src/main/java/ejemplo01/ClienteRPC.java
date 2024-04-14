@@ -37,6 +37,20 @@ public class ClienteRPC {
 		return clienteService.obternerClientes();
 	}
 	
+	/**
+	 * curl -v http://localhost:8080/02_jakartaRESTful_ejemplo/api/clientes/checkCliente?nombre=Mirta
+	 * @param nombre
+	 * @return
+	 */
+	@GET
+	@Path("/checkCliente")
+	@Produces({MediaType.APPLICATION_JSON})
+	public String checkCliente(@QueryParam("nombre") String nombre) {
+		System.out.println("Checkeando la existencia del cliente: " + nombre);
+		return clienteService.checkCliente(nombre);
+	}
+	
+	
 	
 	/**
 	 * Observar como la funcionalidad invocada en la capa de aplicación es la misma
