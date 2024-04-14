@@ -16,7 +16,7 @@ Este mismo se encuentra en http://localhost:8080/021-JakartaEE-XML/PagoSOAP?wsdl
 "3) Instale aplicación SoapUI (client web service), realice y ejecute, una batería de test unitarios de dicho servicio. Analice los datos devueltos."
 
 Se hace la instalación del SoapUI para linux
-![[Pasted image 20240414190651.png]]
+![](Pasted%20image%2020240414190651.png)
 
 
 Se obtienen los pagos utilizando SoapUI:
