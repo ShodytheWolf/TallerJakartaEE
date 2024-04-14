@@ -9,7 +9,7 @@ mvn install wildfly:dev
 ```
 en la carpeta de proyecto: *021-JakartaEE-XML* porqué el servidor que tengo configurado en mi Eclipse no estába levantando bien la API, tras esto me dirijo a la dirección del *wsdl*
  que me indica el servidor cuando lo levanto.
- ![/Archivos/Pasted image 20240406204645.png]
+ ![/Archivos/Pasted%20image%2020240406204645.png]
 Este mismo se encuentra en http://localhost:8080/021-JakartaEE-XML/PagoSOAP?wsdl como índica la imagen arriba
 
 ---
