@@ -20,11 +20,11 @@ Se hace la instalación del SoapUI para linux
 
 
 Se obtienen los pagos utilizando SoapUI:
-![[../Archivos/image-3-20240414201926.png]]
+![](../Archivos/image-3-20240414201926.png)
 
 
 Se realiza un pago nuevo:
-![[../Archivos/image-4-20240414201926.png]]
+![](Archivos/image-4-20240414201926.png)
 
 
 Y se vuelve a revisar los pagos:
